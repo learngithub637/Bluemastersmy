@@ -3,10 +3,233 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Template</title>
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="bower/slick-carousel/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="bower/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="css/style.css"/>
 </head>
-<body>
+<body class="site">
+	
+	<ul class="side-menu">
+		<li class="side-menu_item close-menu" onclick="closeNav()">Close</li>
+		<li class="side-menu_item"><a href="#">Home</a></li>
+		<li class="side-menu_item"><a href="#">About</a></li>
+		<li class="side-menu_item"><a href="#">Portfolio</a></li>
+		<li class="side-menu_item"><a href="#">Blog</a></li>
+		<li class="side-menu_item"><a href="#">Contact</a></li>
+	</ul>
 
+	<div class="site-header-wrapper">
+		<header class="site-header">
+
+			<ul class="subscribe-menu site-header-item">
+				<li class="subscribe-menu_item">Subscribe to:</li>
+				<li class="subscribe-menu_item"><a href="#">Posts</a></li>
+				<li class="subscribe-menu_item"><a href="#">Comments</a></li>
+				<li class="subscribe-menu_item"><a href="#">Email</a></li>
+			</ul>
+
+			<ul class="share-buttons site-header-item">
+				<li class="share-buttons_item"><a href="#"><img src="images/rss.png" alt="RSS"></a></li>
+				<li class="share-buttons_item"><a href="#"><img src="images/fb.png" alt="Facebook"></a></li>
+				<li class="share-buttons_item"><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+			</ul>
+
+			<form action="#" class="search-bar site-header-item">
+				<input type="search" placeholder="Search Keywords" class="search-bar_input">
+				<input type="submit" class="search-bar_submit" value="">
+			</form>
+			
+		</header>
+	</div>
+
+	<div class="site-content-wrapper">
+
+		<div class="logo-area">
+			<a href="#" class="site-logo-link"><img src="images/logo.png" alt="Logo" class="site-logo"></a>
+
+			<div class="burger-icon" onclick="openNav()">a</div>
+			
+			<ul class="site-menu">
+				<li class="site-menu_item"><a href="#">Home</a></li>
+				<li class="site-menu_item"><a href="#">About</a></li>
+				<li class="site-menu_item"><a href="#">Portfolio</a></li>
+				<li class="site-menu_item"><a href="#">Blog</a></li>
+				<li class="site-menu_item"><a href="#">Contact</a></li>
+			</ul>
+			
+		</div>
+		
+		<div class="slider-container">
+			<div class="slider">
+				<div class="slider-item-container"><img src="images/1.jpg" alt="Alt" class="slider-item"></div>
+				<div class="slider-item-container"><img src="images/1.jpg" alt="Alt" class="slider-item"></div>
+				<div class="slider-item-container"><img src="images/1.jpg" alt="Alt" class="slider-item"></div>
+				<div class="slider-item-container"><img src="images/1.jpg" alt="Alt" class="slider-item"></div>
+				<div class="slider-item-container"><img src="images/1.jpg" alt="Alt" class="slider-item"></div>
+			</div>
+			<img src="images/shadow-b.png" alt="Alt" class="slider-shadow">
+		</div>
+
+
+		<div class="cards-container">
+			<section class="cards">
+
+				<div class="about card">
+					<header class="card-header">
+						<img src="images/about.png" alt="Alt" class="card-header-image">
+						<h2 class="about_title cards_title">About iPadMasters</h2>
+					</header>
+					<div class="card_wrapper">
+						<img src="images/bg-1.jpg" alt="Alt" class="cards_image">
+						<h3 class="about_second-title cards_second-title">All About iPad Masters</h3>
+						<span class="about-text card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor facilisis congue. Lorem sum dolor sit amet, consectetur adippend...</span>
+						<a href="#"><button class="about-button cards_button">Learn More</button></a>
+					</div>
+				</div>
+
+				<div class="blog-updates card">
+					<header class="card-header">
+						<img src="images/blog-updates.png" alt="Alt" class="card-header-image">
+						<h2 class="blog-updates_title cards_title">Our Blog Updates</h2>
+					</header>
+					<div class="card_wrapper">
+						<img src="images/bg-2.jpg" alt="Alt" class="cards_image">
+						<h3 class="blog-updates-second-title cards_second-title">My First Website Creation</h3>
+						<small class="blog-updates_posted">Posted in <a href="#">Web Design</a> on April 13th, 2010</small>
+						<span class="blog-updates-text card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempor facilisis congue. Suspend...</span>
+						<a href="#"><button class="about-button cards_button">23 Comments</button></a>
+						<a href="#"><button class="about-button cards_button">Read More</button></a>
+					</div>
+				</div>
+
+				<div class="cards-contact card">
+					<div class="cards-contact_wrapper">
+					<header class="card-header">
+						<img src="images/contact.png" alt="Alt" class="card-header-image">
+						<h2 class="cards-contact_title cards_title">Get In Touch</h2>
+					</header>
+					
+					<div class="card_wrapper">
+						<ul class="cards-contact-items">
+							<li class="cards-contact-item">
+								<img src="images/phone.png" alt="Alt" class="cards-contact-item_icon">
+								<h3 class="cards-contact-item_title">Phone</h3 class="cards-contact-item_title">
+								<div class="cards-contact-item_text">1+ (123) 456.4789</div>
+							</li>
+							<li class="cards-contact-item">
+								<img src="images/email.png" alt="Alt" class="cards-contact-item_icon">
+								<h3 class="cards-contact-item_title">Email</h3 class="cards-contact-item_title">
+								<div class="cards-contact-item_text">hello@yourdomain.com</div>
+							</li>
+							<li class="cards-contact-item">
+								<img src="images/skype.png" alt="Alt" class="cards-contact-item_icon">
+								<h3 class="cards-contact-item_title">Skype</h3 class="cards-contact-item_title">
+								<div class="cards-contact-item_text">yourskypename</div>
+							</li>
+							<li class="cards-contact-item">
+								<img src="images/skype.png" alt="Alt" class="cards-contact-item_icon">
+								<h3 class="cards-contact-item_title">Other Request</h3 class="cards-contact-item_title">
+								<div class="cards-contact-item_text">Try our contact form</div>
+							</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<ul class="cards-contact-social">
+					<li class="cards-contact-social_item"><a href="#"><img src="images/twitter-b.png" alt="Alt"></a></li>
+					<li class="cards-contact-social_item"><a href="#"><img src="images/fb-b.png" alt="Alt"></a></li>
+					<li class="cards-contact-social_item"><a href="#"><img src="images/flickr.png" alt="Alt"></a></li>
+					<li class="cards-contact-social_item"><a href="#"><img src="images/linkedin.png" alt="Alt"></a></li>
+					<li class="cards-contact-social_item"><a href="#"><img src="images/tumblr.png" alt="Alt"></a></li>
+					<li class="cards-contact-social_item"><a href="#"><img src="images/youtube.png" alt="Alt"></a></li>
+				</ul>
+					
+
+				</div>
+				
+			</section>
+		</div>
+		
+	
+	</div> <!-- site-content-wrapper -->
+
+	<div class="site-footer-wrapper">
+		
+		<footer class="site-footer">
+			<div class="footer-sections">
+				<section class="footer-about footer-section">
+					<h2 class="footer-about_title footer-titles">About Us</h2>
+					<ul class="footer-links">
+						<li class="footer-about_link footer-link"><a href="#">Our Company</a></li>
+						<li class="footer-about_link footer-link"><a href="#">Our Blog</a></li>
+						<li class="footer-about_link footer-link"><a href="#">Submit a Site</a></li>
+						<li class="footer-about_link footer-link"><a href="#">Contact Us</a></li>
+						<li class="footer-about_link footer-link"><a href="#">Help & Terms</a></li>
+						<li class="footer-about_link footer-link"><a href="#">Read Our FAQ</a></li>
+					</ul>
+				</section>
+
+				<section class="footer-categories footer-section">
+					<h2 class="footer-categories_title footer-titles">Categories</h2>
+					<ul class="footer-links">
+						<li class="footer-categories-link footer-link"><a href="#">Trends & Technology</a></li>
+						<li class="footer-categories-link footer-link"><a href="#">Design Companies</a></li>
+						<li class="footer-categories-link footer-link"><a href="#">Design Freelancers</a></li>
+						<li class="footer-categories-link footer-link"><a href="#">Web Portfolios</a></li>
+						<li class="footer-categories-link footer-link"><a href="#">Web Development</a></li>
+						<li class="footer-categories-link footer-link"><a href="#">General Icons</a></li>
+					</ul>
+				</section>
+
+				<section class="footer-gallery-section footer-section">
+					<h2 class="footer-titles">From The Gallery</h2>
+					<div class="footer-gallery">
+						<div class="footer-gallery-item"><img src="images/gallery.jpg" alt="Alt" class="footer-gallery-image"></div>
+						<div class="footer-gallery-item"><img src="images/gallery.jpg" alt="Alt" class="footer-gallery-image"></div>
+						<div class="footer-gallery-item"><img src="images/gallery.jpg" alt="Alt" class="footer-gallery-image"></div>
+						<div class="footer-gallery-item"><img src="images/gallery.jpg" alt="Alt" class="footer-gallery-image"></div>
+						<div class="footer-gallery-item"><img src="images/gallery.jpg" alt="Alt" class="footer-gallery-image"></div>
+						<div class="footer-gallery-item"><img src="images/gallery.jpg" alt="Alt" class="footer-gallery-image"></div>
+						<div class="footer-gallery-item"><img src="images/gallery.jpg" alt="Alt" class="footer-gallery-image"></div>
+						<div class="footer-gallery-item"><img src="images/gallery.jpg" alt="Alt" class="footer-gallery-image"></div>
+					</div>
+				</section>
+
+				<section class="footer-twitter-updates footer-section">
+					<h2 class="footer-titles footer-titles-twitter">Twitter Updates</h2>
+					<div class="footer-twitter-updates_bubble">
+						<p class="footer-twitter-updates_text"><a href="#">@Dellustrations</a> there is a new designer in  town people! It’s amazing How you can do everything inside twitter! <a href="#">http:/bit.urds</a></p>
+						<span class="footer-twitter-updates_posted-1">2 minutes ago via </span><span class="footer-twitter-updates_posted-2">TweeterDeck</span>
+						<img src="images/twitter-bird.png" alt="Alt" class="footer-twitter-updates_bird">
+						<div class="footer-twitter-updates_triangle"></div>
+					</div>
+				</section>
+			</div> <!-- footer-sections -->
+		</footer>
+
+		<div class="footer-bottom-wrapper">
+			<div class="footer-bottom">
+				<span class="copyright">&#9400; 2010 Copyright iPadMasters Theme. All Rights Reserved.</span>
+				
+				<ul class="footer-bottom-menu">
+					<li class="footer-bottom-menu_item"><a href="#">Log in</a></li>
+					<li class="footer-bottom-menu_item"><a href="#">Privacy Policy</a></li>
+					<li class="footer-bottom-menu_item"><a href="#">Terms and Conditions</a></li>
+					<li class="footer-bottom-menu_item"><a href="#">Contact Us</a></li>
+					<li class="footer-bottom-menu_item"><a href="#">Back to Top</a></li>
+				</ul>
+
+			</div>
+			
+		</div>
+
+	</div> <!-- site-footer-wrapper -->
+
+	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="bower/slick-carousel/slick/slick.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>
